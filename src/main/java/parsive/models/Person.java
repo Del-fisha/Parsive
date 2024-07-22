@@ -9,6 +9,7 @@ import java.time.LocalDateTime;
 @Getter
 @Setter
 public class Person {
+    int id;
     private String secondName;
     private String name;
     private String patronymic; //Отчество
