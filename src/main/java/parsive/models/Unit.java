@@ -1,4 +1,4 @@
-package com.example.TestSpringInit.models;
+package parsive.models;
 
 import jakarta.persistence.*;
 import lombok.Getter;

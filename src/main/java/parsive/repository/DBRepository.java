@@ -1,6 +1,6 @@
-package com.example.TestSpringInit.repository;
+package parsive.repository;
 
-import com.example.TestSpringInit.models.Unit;
+import parsive.models.Unit;
 import org.springframework.data.repository.CrudRepository;
 
 import java.time.LocalDateTime;
