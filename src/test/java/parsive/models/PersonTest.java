@@ -2,10 +2,13 @@ package parsive.models;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ContextConfiguration;
+import parsive.ConfigurationClass;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest
+@ContextConfiguration(classes = {ConfigurationClass.class})
 class PersonTest {
     @Test
     void contextLoads() {

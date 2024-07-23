@@ -2,12 +2,14 @@ package parsive.models;
 
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.stereotype.Component;
 
 import java.awt.*;
 import java.time.LocalDateTime;
 
 @Getter
 @Setter
+@Component
 public class Person {
     int id;
     private String secondName;

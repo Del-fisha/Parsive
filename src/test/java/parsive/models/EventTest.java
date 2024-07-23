@@ -44,7 +44,7 @@ class EventTest {
     @Test
     void testToStringEvent() {
         String expectedOutput = """
-                Дата события: 2024-12-05T23:19
+                Дата события: 05 декабря 2024 23:19
                 Станция: Приморская
                 Данные о человеке: Иванов Борис Николаевич
                 """;
@@ -57,7 +57,7 @@ class EventTest {
     @Test
     void testToStringEventUnknownPerson() {
         String expectedOutput = """
-                Дата события: 2024-03-21T07:25
+                Дата события: 21 марта 2024 07:25
                 Станция: Сенная площадь - Спасская - Садовая
                 Данные о человеке: Неустановленное лицо
                 """;
