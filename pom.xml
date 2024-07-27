@@ -8,10 +8,10 @@
 		<version>3.3.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>TestSpringInit</artifactId>
+	<groupId>parsive</groupId>
+	<artifactId>App</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>TestSpringInitName</name>
+	<name>App</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
@@ -54,6 +54,22 @@
 			<artifactId>postgresql</artifactId>
 			<version>42.7.3</version>
 		</dependency>
+		<dependency>
+			<groupId>org.telegram</groupId>
+			<artifactId>telegrambots-spring-boot-starter</artifactId>
+			<version>6.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.telegram</groupId>
+			<artifactId>telegrambots-abilities</artifactId>
+			<version>6.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>

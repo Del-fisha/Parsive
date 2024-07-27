@@ -1,17 +1,31 @@
 package parsive.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.stereotype.Component;
+
+import java.io.Serializable;
+import java.util.UUID;
 
 @Getter
 @Setter
-@Component
-public class Station {
-    private String name;
-    private String name2;
-    private String name3;
+@NoArgsConstructor
+@Entity
+@Table(name = "Station")
+public class Station implements Serializable {
 
+    @Id
+    private UUID id;
+    private String name;
+    private String altName;
+
+}
+
+
+/*
     @Override
     public String toString() {
         if (name2 != null && name3 != null) {
@@ -22,4 +36,4 @@ public class Station {
             return name;
         }
     }
-}
+*/

@@ -1,5 +1,5 @@
 package parsive.models;
-
+/*
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -51,4 +51,4 @@ class StationTest {
         assertEquals(expectedOutput, actualOutput, "Вывод информации о станции с тремя названиями " +
                 "не соответствует ожидаемому");
     }
-}
+}*/

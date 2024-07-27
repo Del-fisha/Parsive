@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
+/*
 class EventTest {
     Station station1;
     Person person1;
@@ -66,4 +66,4 @@ class EventTest {
         assertEquals(expectedOutput, actualOutput, "Вывод информации о событии " +
                 "не соответствует ожидаемому");
     }
-}
+}*/

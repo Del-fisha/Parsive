@@ -1,25 +1,38 @@
 package parsive.models;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.springframework.stereotype.Component;
 
-import java.awt.*;
-import java.time.LocalDateTime;
+import java.io.Serializable;
+import java.util.UUID;
 
 @Getter
 @Setter
-@Component
-public class Person {
-    int id;
-    private String secondName;
+@NoArgsConstructor
+@Entity
+@Table(name = "Person")
+public class Person implements Serializable {
+
+    @Id
+    private UUID id;
     private String name;
     private String patronymic; //Отчество
-    private LocalDateTime birthday;
-    private List pictureList; //ToDo Определить в каком типе содержатся изображения
+    private String lastName;
+    //private List pictureList; //ToDo Определить в каком типе содержатся изображения
+    //private LocalDateTime birthday;
+    private Boolean isKnown;
     private String notes; // Для записей комментариев при добавлении лица
 
-    @Override
+
+}
+
+
+/*
+*     @Override
     public String toString() {
         if (secondName != null && name != null && patronymic != null) {
             return String.join(" ",secondName, name, patronymic);
@@ -27,4 +40,4 @@ public class Person {
             return "Неустановленное лицо";
         }
     }
-}
+* */
